@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
@@ -12,12 +13,6 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
-
-@media (min-width: 300px) {
-  .container {
-    width: 100%; /* Takes up the full viewport width */ /* Optional: Add some padding to avoid content touching the edges */
-  }
-}
 
 *,
 *::before,
@@ -91,7 +86,7 @@ p, ul, li {
 
 .container {
   background-color: var(--white);
-  width: 60%;
+  width: 800px;
   height: auto;
   margin: auto;
   border-radius: 1rem;
@@ -99,6 +94,12 @@ p, ul, li {
   overflow:hidden;
   padding: 2rem;
 }
+@media (max-width: 768px) {
+      .container {
+        width: 100%; /* Full viewport width */
+        padding: 20px 10px; /* Adds padding for better readability */
+      }
+    }
 
 img {
   display: block;
