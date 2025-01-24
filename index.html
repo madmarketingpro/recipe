@@ -73,7 +73,8 @@ p, ul, li {
 }
 
 .prep-list {
-  line-height: 2.2rem;
+  line-height: 1.8rem;
+  list-style-position: outside;
 }
 
 .prep-list-item {
@@ -115,7 +116,7 @@ ul {
 }
 
 .ingredient-list-item {
-  text-indent: 1.8rem;
+  padding-left: 1.8rem;
   list-style-type: square;
 }
 .ingredient-list-item::marker {
@@ -123,13 +124,46 @@ ul {
   font-size: 0.8rem;
 }
 
-.instuction-list {
-  line-height: 1.8rem;
+
+.instruction-list {
+line-height: 2rem;
+list-style-position: outside;
 }
-.instuction-list-item::marker {
+.instruction-list-item {
+  padding-left: 1.8rem;
+}
+.instruction-list-item::marker {
+  font-weight: bold;
   color: var(--brown800);
 }
 
+.nutrition-table {
+  width: 100%;
+  padding-left: 1.8rem;
+  font-family: outfit;
+  color: var(--stone600);
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 0.085rem solid var(--stone150);
+  line-height: 3rem;
+}
+tr:nth-child(4) {
+  border-bottom: none;
+  line-height: 2rem;
+}
+
+td {
+  padding-top: 0.85rem;
+}
+
+.nutrition-title {
+  padding-left: 1.8rem;
+}
+.nutrition-data {
+  font-weight: bold;
+  color: var(--brown800);
+}
 
 
     .attribution { font-size: 11px; text-align: center; }
@@ -171,7 +205,7 @@ ul {
 <div class="instructions">
   <h2 class="instructions">Instructions</h2>
 
-  <ol class="instuction-list">
+  <ol class="instruction-list">
     <li class="instruction-list-item"><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
       You can add a tablespoon of water or milk for a fluffier texture.</li>
     <li class="instruction-list-item"><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
@@ -184,7 +218,7 @@ ul {
     <li class="instruction-list-item"><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>  
 </ol>
 </div>
-<div class="nurtition">
+<div class="nurtition-table-section">
   <h2 class="nutrition">Nutrition</h2>
 
   <p class="nutrition-desc">The table below shows nutritional values per serving without the additional fillings.</p>
